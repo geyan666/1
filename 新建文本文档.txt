@@ -1,0 +1,72 @@
+
+#include <stdio.h>
+#include <math.h>
+int main(){
+  double x,y;;
+  char o; 
+  
+  
+   printf("输入x啊兄弟\n") ;
+    scanf("%lf",&x);
+
+  if(x<0) 
+  {
+  	y=0;
+  }
+
+   else if(x<=15) 
+       {
+     y=4*x/3;
+  } 
+   else 
+  {
+  	y=2.5*x-10.5;
+                    
+  }
+   printf("f(%.2lf)=%.2lf\n",x,y) ; 
+return 0;
+}
+
+
+
+
+
+
+#include <stdio.h>
+#include <math.h>
+int main(){
+  double x,y;;
+  char o; 
+    scanf("%lf%c%lf",&x,&o,&y);
+
+  if(o=='+') 
+  {
+    printf("=%.2lf",x+y) ; 
+  }
+
+    else if(o=='-') 
+       {
+     printf("=%.2lf",x-y) ; 
+  }  
+    else if(o=='*') 
+         {
+   printf("=%.2lf",x*y) ; 
+  }
+    else if(o=='/') 
+    {
+       if(y==0)
+         printf("分母不能为零");   	
+        else   	
+          printf("=%.2lf",x/y) ; 
+  }
+    
+    else 
+  {
+                    
+printf("未知运算符") ; 
+  }
+
+return 0;
+}
+
+
